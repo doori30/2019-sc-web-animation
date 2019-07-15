@@ -5,7 +5,7 @@ transition-property: ;css속성 중에 어떤 속성을 antion을 시킬것인�
 transition-timing-function: ; animation의 효과.linear(기본값)(생략가능)
 */
 
-.wrap {
+.wrap {border: 1px solid red;
 	max-width: 1200px;
 	margin: 100px auto;
 	display: flex;
