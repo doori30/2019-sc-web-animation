@@ -13,6 +13,10 @@ transition-timing-function: ; animation의 효과.linear(기본값)(생략가능
 }
 .wrap >li {
 	flex: 24% 0 0;
+	position: relative;
+	top: 20px;
+	opacity: 0.8;
+	transition: all 0.5s;
 }
 .wrap .name {
 	font-size: 1.5rem;
@@ -31,4 +35,8 @@ transition-timing-function: ; animation의 효과.linear(기본값)(생략가능
 }
 .wrap .img:hover{
 	transform: scale(1.2);
+}
+.wrap > li:hover{
+	opacity: 1;
+	top: 0;
 }
