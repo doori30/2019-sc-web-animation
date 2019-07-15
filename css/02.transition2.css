@@ -7,23 +7,28 @@ transition-timing-function: ; animation의 효과.linear(기본값)(생략가능
 
 .wrap {
 	max-width: 1200px;
-	margin: auto;
+	margin: 100px auto;
+	display: flex;
+	justify-content: space-between;
 }
-.box {
-	width: 200px;
-  height: 200px;
-  margin: 50px;
+.wrap >li {
+	flex: 24% 0 0;
 }
-.box1{
-background-color: rgb(15, 131, 131);
-/* transition-delay: 1s; */
-transition-duration: 1s;
-transition-property: all;
-transition-timing-function: ease-in-out;
+.wrap .name {
+	font-size: 1.5rem;
+	color: darkblue;
+	padding: 0.5rem 0;
 }
-.box1:hover {
-	background-color: rgb(118, 228, 191);
-	width: 1000px;
-	height: 400px;
-	opacity: 0;
+.wrap .cont {
+	color: #777;
+}
+.wrap .pic {
+	overflow: hidden;
+}
+.wrap .img {
+  transition-duration: 0.5s;
+	transition-property: all;
+}
+.wrap .img:hover{
+	transform: scale(1.2);
 }
